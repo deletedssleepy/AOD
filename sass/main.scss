@@ -1,0 +1,277 @@
+@import "./base/body";
+@import "./base/null-styles";
+
+@import "./components/backdrop";
+@import "./components/bikes";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/section";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/footer";
+
+@import "./utils/hidden";
+@import "./utils/variables";
+
+.hero {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/bg_1.png);
+  background-color: var(--primary-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about {
+  padding: 117px 0;
+  background-color: #f7f7f7;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 52px;
+  }
+
+  &__title {
+    margin-top: 34px;
+  }
+
+  &__subtitle {
+    margin-top: 35px;
+  }
+}
+
+.work {
+  &_list {
+  }
+
+  &__item {
+    display: flex;
+    min-height: 600px;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 68px;
+    background-color: #fff;
+
+    text-align: left;
+  }
+
+  &__title {
+    margin-top: 30px;
+  }
+  
+  &__subtitle {
+    margin-top: 25px;
+  
+    font-size: 16px;
+    line-height: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-top: 43px;
+      width: 50px;
+      height: 1px;
+      background-color: #d7d7d7;
+    }
+  }
+  
+  &__rhombus {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.twitter {
+  padding: 124px 0;
+  background: #f7f7f7;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  &__icon {
+    width: 32px;
+  }
+
+  &__title {
+    margin-top: 37px;
+  
+    text-transform: none;
+    letter-spacing: 0.1em;
+  }
+
+  &__timing {
+    font-weight: 300;
+    color: var(--secondary-text-color);
+  }
+
+  &__subtitle {
+    margin-top: 26px;
+  
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  &__list {
+    display: flex;
+    gap: 8px;
+    margin-top: 100px;
+  }
+}
+
+.twitter__item {
+}
+
+.twitter__link {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #c9c9c9;
+  border-radius: 50%;
+  transition: border 250ms linear, background-color 250ms linear;
+
+  &.twitter__link--active {
+    border: 1px solid #a9afb3;
+    background-color: #a9afb3;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #64c29e;
+    background-color: #64c29e;
+  }
+}
+
+.shop {
+  background-color: var(--secondary-background-color);
+  
+.shop__list {
+  display: flex;
+  justify-content: space-between;
+}
+.shop__item {
+
+  &:nth-child(2) {
+    display: flex;
+  }
+}
+.shop__set {
+  display: flex;
+  max-width: 533px;
+}
+.shop__link {
+  position: relative;
+
+  &:hover .backdrop {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.shop__card {
+  background-color: var(--secondary-background-color);
+}
+
+.shop-discover {
+  padding: 75px 0;
+}
+
+.shop-discover__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #94979a;
+  transition: border 250ms linear, color 250ms linear;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #64c29e;
+
+    color: #64c29e;
+  }
+}
+}
+
+.mailing {
+  padding: 110px 0;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    margin-top: 38px;
+
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  &_input {
+    width: 400px;
+    height: 69px;
+    border: 1px solid #d3d7d9;
+    outline: none;
+    padding: 28px;
+    margin-right: 8px;
+
+    &::placeholder {
+      font-family: Lato;
+      font-size: 20px;
+      font-style: italic;
+      color: #cdcdcd;
+    }
+  }
+
+  .mailing__button {
+    width: 126px;
+    height: 69px;
+    border: 0;
+    background-color: var(--primary-button-color);
+    transition: background-color 250ms linear;
+
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      background-color: var(--secondary-button-color);
+    }
+  }
+}
+
+

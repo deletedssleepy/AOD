@@ -1,0 +1,19 @@
+.section {
+  font-size: 18px;
+  text-align: center;
+  &__title {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--title-color);
+  }
+
+  &__subtitle {
+    max-width: 1080px;
+    
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 34px;
+    color: var(--secondary-text-color);
+  }
+}

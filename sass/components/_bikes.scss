@@ -1,0 +1,101 @@
+.work__bike01-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/bg_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-background-color);
+
+  &-icon {
+    width: 41px;
+  }
+}
+
+.work__bike01-2 {
+  max-width: 534px;
+
+  &__img {
+    height: 200px;
+    background-image: url(../img/bg_3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-background-color);
+  }
+}
+
+.work__bike02-1 {
+  max-width: 534px;
+
+  &__img {
+    height: 200px;
+    background-image: url(../img/bg_4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-background-color);
+  }
+}
+
+.work__bike02-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/bg_5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-background-color);
+
+  &-icon {
+    width: 32px;
+  }
+}
+
+.work__bike03-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/bg_6.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-background-color);
+
+  &-icon {
+    width: 32px;
+  }
+}
+
+.work__bike03-2 {
+  min-width: 534px;
+
+  &__img {
+    height: 200px;
+    background-image: url(../img/bg_7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--secondary-background-color);
+  }
+}
+
+.work__bike03-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/bg_8.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-background-color);
+
+  &-icon {
+    width: 32px;
+  }
+}
